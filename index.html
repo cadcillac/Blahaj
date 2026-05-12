@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BLÅHAJ - Shark-themed Jewelry & Accessories</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>BLÅHAJ</h1>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Shark-Inspired Elegance</h2>
+    <p>Discover jewelry and accessories inspired by the ocean's fiercest beauty.</p>
+  </section>
+
+  <section id="products">
+    <h2>Featured Products</h2>
+    <div class="slider-container">
+      <button class="arrow left-arrow" aria-label="Previous product">&#10094;</button>
+      <div class="slider-track">
+        <article class="product" tabindex="0">
+          <img src="images/ring.jpg" alt="Shark Tooth Ring" />
+          <h3>Shark Tooth Ring</h3>
+          <p>Elegant silver ring designed to look like a fierce shark tooth.</p>
+          <span class="price">$79</span>
+        </article>
+        <article class="product" tabindex="0">
+          <img src="images/necklace.jpg" alt="Ocean Frenzy Necklace" />
+          <h3>Ocean Frenzy Necklace</h3>
+          <p>Delicate necklace with shark fin pendant, perfect for any occasion.</p>
+          <span class="price">$120</span>
+        </article>
+        <article class="product" tabindex="0">
+          <img src="images/earring.jpg" alt="Shark Fin Earrings" />
+          <h3>Shark Fin Earrings</h3>
+          <p>Stylish earrings shaped like sleek shark fins made with marine-grade steel.</p>
+          <span class="price">$59</span>
+        </article>
+        <article class="product" tabindex="0">
+          <img src="images/bracelet.jpg" alt="Shark Scale Bracelet" />
+          <h3>Shark Scale Bracelet</h3>
+          <p>Hand-crafted bracelet resembling shark scales in sterling silver.</p>
+          <span class="price">$99</span>
+        </article>
+      </div>
+      <button class="arrow right-arrow" aria-label="Next product">&#10095;</button>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About BLÅHAJ</h2>
+    <p>
+      BLÅHAJ blends oceanic inspiration with modern fashion to bring you unique jewelry and accessories
+      that embody the spirit of the shark — powerful, sophisticated, and beautiful.
+    </p>
+    <button id="toggleMoreAbout" aria-expanded="false">More About Us ▼</button>
+    <div id="moreAbout" hidden>
+      <h3>Company Hierarchy</h3>
+      <ul id="hierarchy">
+        <li class="role" tabindex="0" data-description="Our CEO drives the vision and oversees all company operations.">CEO</li>
+        <li class="role" tabindex="0" data-description="The Creative Director shapes the aesthetic and design philosophy of BLÅHAJ.">Creative Director</li>
+        <li class="role" tabindex="0" data-description="Head of Sales & Marketing ensures BLÅHAJ reaches and resonates with customers worldwide.">Head of Sales & Marketing</li>
+        <li class="role" tabindex="0" data-description="Operations Manager coordinates production, supply chain, and daily logistics.">Operations Manager</li>
+        <li class="role" tabindex="0" data-description="Customer Service Representatives assist customers and handle inquiries promptly and kindly.">Customer Service</li>
+      </ul>
+      <div id="roleDescription" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email us at <a href="mailto:cillaized@gmail.com">cillaized@gmail.com</a></p>
+    <form id="contactForm" aria-label="Contact form">
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Your name" required />
+
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="Your email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Your message" required></textarea>
+      
+      <button type="submit">Send</button>
+    </form>
+    <p id="formResponse" role="alert"></p>
+  </section>
+
+  <footer>
+    &copy; 2024 BLÅHAJ. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
